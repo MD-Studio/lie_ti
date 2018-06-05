@@ -31,7 +31,7 @@ setup(
     version=0.2,
     description='MDStudio Thermodynamic Integration using Gromacs',
     author="""
-    Valerio Ferrarion - Institute of Biochemistry and Technical Biochemistry - Stuttgard
+    Valerio Ferrario - Institute of Biochemistry and Technical Biochemistry - Stuttgard
     Marc van Dijk - VU University - Amsterdam
     Paul Visscher - Zefiros Software (www.zefiros.eu)
     Felipe Zapata - eScience Center (https://www.esciencecenter.nl/)""",
