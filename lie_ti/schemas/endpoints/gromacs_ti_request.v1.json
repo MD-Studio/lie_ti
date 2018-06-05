@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://mdstudio/schemas/gromacs_TI_request.json",
+  "title": "GromacsTI",
+  "description": "TI using GROMACS MD software",
+  "type": "object",
+  "properties": {
+    "system_file": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "system gro input file"
+    },
+    "topology_file": {
+      "type": "string",
+      "description": "topo.top GROMACS topology file"
+    },
+    "include": {
+      "type": "array",
+      "description": "List of *itp files included in the topology"
+    },
+    "cerise_file": {
+      "type": "string",
+      "description": "Path to the cerise path file configuration"
+    },
+    "EM_file": {
+      "type": "string",
+      "description": "em_steep.mdp file"
+    },
+    "NVT_file": {
+      "type": "string",
+      "description": "nvt.mdp file."
+    },
+    "NPT_file": {
+      "type": "string",
+      "description": "npt.mdp file."
+    },
+    "ProductionMD_file": {
+      "type": "string",
+      "description": "md.mdp file."
+    },
+    "Job_file": {
+      "type": "string",
+      "description": "job.sh file."
+    },
+    "PYBAR_file": {
+      "type": "string",
+      "description": "run_PYMBAR.sh file."
+    },
+    "pl_file": {
+      "type": "array",
+      "description": "pl scrips for generating the sh jobs and the mdp files for the Lambda points."
+    },
+    "Run_all": {
+      "type": "string",
+      "description": "Run all the Lambda points."
+    }
+  },
+  "required": [
+    "system_file",
+    "topology_file",
+    "include_file",
+    "cerise_file",
+    "EM_file",
+    "NVT_file",
+    "NPT_file",
+    "ProductionMD_file",
+    "Job_file",
+    "PYBAR_file",
+    "pl_file",
+    "Run_all"
+  ]
+}

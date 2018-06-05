@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://mdstudio/schemas/gromacs_TI_response.json",
+    "title": "GromacsTI",
+    "description": "Output of the TI components using GROMACS MD software",
+    "type": "object",
+    "properties": {
+	"status": {
+	    "type": "string",
+	    "description": "Job final status",
+	    "enum": ["failed", "completed"]
+	},
+	"output": {
+	    "type": "array",
+	    "description": "Free Energy files"
+	} 
+    },
+    "required": ["output", "status"]
+}
