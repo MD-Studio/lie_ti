@@ -36,7 +36,7 @@ cd EM_1
 
 # Iterative calls to grompp and mdrun to run the simulations
 
-gmx grompp -f $MDP/EM/em_steep_$LAMBDA.mdp -c $FREE_ENERGY/../coord/start.gro -p $FREE_ENERGY/../topo/topo.top -o min$LAMBDA.tpr -maxwarn 33
+gmx grompp -f $MDP/EM/em_steep_$LAMBDA.mdp -c $FREE_ENERGY/../coord/start.gro -p $FREE_ENERGY/../topo/topo.top -o min_$LAMBDA.tpr -maxwarn 33
 
 mdrun_s_gpu -ntomp $PBS_NP -deffnm min$LAMBDA
 
